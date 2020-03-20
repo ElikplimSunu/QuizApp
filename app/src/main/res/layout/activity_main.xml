@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
 	style="@style/Background"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
@@ -80,8 +79,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question2_card_view"
-				android:layout_below="@id/question1_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question1_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -135,8 +134,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question3_card_view"
-				android:layout_below="@id/question2_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question2_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -191,8 +190,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question4_card_view"
-				android:layout_below="@id/question3_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question3_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -246,8 +245,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question5_card_view"
-				android:layout_below="@id/question4_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question4_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -274,8 +273,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question6_card_view"
-				android:layout_below="@id/question5_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question5_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -345,8 +344,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question7_card_view"
-				android:layout_below="@id/question6_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question6_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -375,8 +374,8 @@
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/question8_card_view"
-				android:layout_below="@id/question7_card_view"
-				style="@style/CardViewStyle">
+				style="@style/CardViewStyle"
+				android:layout_below="@id/question7_card_view">
 
 				<RelativeLayout
 					android:layout_width="wrap_content"
@@ -440,26 +439,26 @@
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:layout_below="@id/question8_card_view">
+				android:layout_below="@id/question8_card_view"
+				android:orientation="horizontal">
 
 				<Button
 					android:id="@+id/submit_button"
+					style="@style/ButtonStyle"
 					android:onClick="submitAnswers"
-					android:text="@string/submit_button"
-					style="@style/ButtonStyle"/>
+					android:text="@string/submit_button" />
 
 				<Button
 					android:id="@+id/new_start_button"
+					style="@style/ButtonStyle"
 					android:onClick="startOver"
-					android:text="@string/startOver_button"
-					style="@style/ButtonStyle" />
+					android:text="@string/startOver_button" />
 
 				<Button
 					android:id="@+id/show_answers_button"
+					style="@style/ButtonStyle"
 					android:onClick="showAnswers"
-					android:text="@string/ShowAnswers_button"
-					style="@style/ButtonStyle"/>
+					android:text="@string/ShowAnswers_button" />
 
 			</LinearLayout>
 

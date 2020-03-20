@@ -36,7 +36,7 @@
 		<item name="cardBackgroundColor">#3F51B5</item>
 		<item name="cardCornerRadius">8dp</item>
 		<item name="android:layout_margin">2dp</item>
-		<item name = "android:padding">4dp</item>
+		<item name="android:padding">4dp</item>
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 	</style>
@@ -45,7 +45,7 @@
 	<style name="ButtonStyle">
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_height">wrap_content</item>
-<item name="android:layout_margin">4dp</item>
+		<item name="android:layout_margin">4dp</item>
 		<item name="android:background">@drawable/custom_button</item>
 		<item name="android:layout_weight">1</item>
 		<item name="android:textColor">#ffffff</item>

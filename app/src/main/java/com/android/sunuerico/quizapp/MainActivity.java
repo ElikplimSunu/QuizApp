@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 	}
 
-int score = 0;
+	int score = 0;
 
 	//This method is called when the Submit button is clicked
 	public void submitAnswers(View view) {
@@ -79,18 +79,18 @@ int score = 0;
 
 		calculateScore(correctQuestion1, correctQuestion2, correctQuestion3, correctQuestion4, correctQuestion5,
 				correctQuestion6a, correctQuestion6b, correctQuestion6c, correctQuestion6d, correctQuestion6e,
-				correctQuestion6f, correctQuestion7,correctQuestion8a, correctQuestion8b, correctQuestion8c,
+				correctQuestion6f, correctQuestion7, correctQuestion8a, correctQuestion8b, correctQuestion8c,
 				correctQuestion8d, correctQuestion8e);
 
 		String scoreMessage1 = "You scored " + score + " out of 8. Good Job :)";
 		String scoreMessage2 = "You scored " + score + " out of 8. I believe you can do better :)";
 
-		if(score <= 5){
-			Toast.makeText(this,scoreMessage2, Toast.LENGTH_LONG).show();
+		if (score <= 5) {
+			Toast.makeText(this, scoreMessage2, Toast.LENGTH_LONG).show();
 		}
 
-		if(score > 5){
-			Toast.makeText(this,scoreMessage1, Toast.LENGTH_LONG).show();
+		if (score > 5) {
+			Toast.makeText(this, scoreMessage1, Toast.LENGTH_LONG).show();
 		}
 
 	}
@@ -98,14 +98,14 @@ int score = 0;
 
 	//This method adds the scores assigns colours to the wrong or correct answers
 	public void calculateScore(boolean correctQuestion1Answer, boolean correctQuestion2Answer,
-	                          boolean correctQuestion3Answer, boolean correctQuestion4Answer,
-	                          String correctQuestion5Answer, boolean correctQuestion6aAnswer,
-	                          boolean correctQuestion6bAnswer, boolean correctQuestion6cAnswer,
+	                           boolean correctQuestion3Answer, boolean correctQuestion4Answer,
+	                           String correctQuestion5Answer, boolean correctQuestion6aAnswer,
+	                           boolean correctQuestion6bAnswer, boolean correctQuestion6cAnswer,
 	                           boolean correctQuestion6dAnswer, boolean correctQuestion6eAnswer,
-	                          boolean correctQuestion6fAnswer, String correctQuestion7Answer,
-	                           boolean correctQuestion8aAnswer,boolean correctQuestion8bAnswer,
-	                           boolean correctQuestion8cAnswer,boolean correctQuestion8dAnswer,
-	                          boolean correctQuestion8eAnswer
+	                           boolean correctQuestion6fAnswer, String correctQuestion7Answer,
+	                           boolean correctQuestion8aAnswer, boolean correctQuestion8bAnswer,
+	                           boolean correctQuestion8cAnswer, boolean correctQuestion8dAnswer,
+	                           boolean correctQuestion8eAnswer
 	) {
 
 		if (correctQuestion1Answer) {
@@ -113,8 +113,7 @@ int score = 0;
 
 			RadioButton question1RadioButton = findViewById(R.id.question1_a);
 			question1RadioButton.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			RadioGroup question1RadioGroup = findViewById(R.id.question1_radio_buttons);
 			int selectedId = question1RadioGroup.getCheckedRadioButtonId();
 
@@ -128,8 +127,7 @@ int score = 0;
 
 			RadioButton question2RadioButton = findViewById(R.id.question2_c);
 			question2RadioButton.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			RadioGroup question2RadioGroup = findViewById(R.id.question2_radio_buttons);
 			int selectedId = question2RadioGroup.getCheckedRadioButtonId();
 
@@ -143,8 +141,7 @@ int score = 0;
 
 			RadioButton question3RadioButton = findViewById(R.id.question3_c);
 			question3RadioButton.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			RadioGroup question3RadioGroup = findViewById(R.id.question3_radio_buttons);
 			int selectedId = question3RadioGroup.getCheckedRadioButtonId();
 
@@ -158,8 +155,7 @@ int score = 0;
 
 			RadioButton question4RadioButton = findViewById(R.id.question4_c);
 			question4RadioButton.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			RadioGroup question4RadioGroup = findViewById(R.id.question4_radio_buttons);
 			int selectedId = question4RadioGroup.getCheckedRadioButtonId();
 
@@ -172,10 +168,9 @@ int score = 0;
 
 			EditText question5EditText = findViewById(R.id.question5_edit_text);
 			question5EditText.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			EditText question5EditText = findViewById(R.id.question5_edit_text);
-		question5EditText.setTextColor(Color.RED);
+			question5EditText.setTextColor(Color.RED);
 		}
 
 		if (correctQuestion6aAnswer && correctQuestion6bAnswer && correctQuestion6dAnswer
@@ -194,16 +189,17 @@ int score = 0;
 			CheckBox question6fCheckBox = findViewById(R.id.question6_f);
 			question6fCheckBox.setTextColor(Color.GREEN);
 
-		}
-		else {
-			if(correctQuestion6cAnswer){
-			CheckBox question6cCheckBox = findViewById(R.id.question6_c);
-			question6cCheckBox.setTextColor(Color.RED);}
+		} else {
+			if (correctQuestion6cAnswer) {
+				CheckBox question6cCheckBox = findViewById(R.id.question6_c);
+				question6cCheckBox.setTextColor(Color.RED);
+			}
 
 
-			if(correctQuestion6eAnswer){
-			CheckBox question6eCheckBox = findViewById(R.id.question6_e);
-			question6eCheckBox.setTextColor(Color.RED);}
+			if (correctQuestion6eAnswer) {
+				CheckBox question6eCheckBox = findViewById(R.id.question6_e);
+				question6eCheckBox.setTextColor(Color.RED);
+			}
 		}
 
 		if (correctQuestion7Answer.equals("RelativeLayout")) {
@@ -211,8 +207,7 @@ int score = 0;
 
 			EditText question7EditText = findViewById(R.id.question7_edit_text);
 			question7EditText.setTextColor(Color.GREEN);
-		}
-		else {
+		} else {
 			EditText question7EditText = findViewById(R.id.question7_edit_text);
 			question7EditText.setTextColor(Color.RED);
 		}
@@ -226,35 +221,37 @@ int score = 0;
 
 			CheckBox question8eCheckBox = findViewById(R.id.question8_e);
 			question8eCheckBox.setTextColor(Color.GREEN);
-		}
-		else {
-			if(correctQuestion8aAnswer){
-			CheckBox question8aCheckBox = findViewById(R.id.question8_a);
-			question8aCheckBox.setTextColor(Color.RED);}
+		} else {
+			if (correctQuestion8aAnswer) {
+				CheckBox question8aCheckBox = findViewById(R.id.question8_a);
+				question8aCheckBox.setTextColor(Color.RED);
+			}
 
 
-			if(correctQuestion8bAnswer){
-			CheckBox question8bCheckBox = findViewById(R.id.question8_b);
-			question8bCheckBox.setTextColor(Color.RED);}
+			if (correctQuestion8bAnswer) {
+				CheckBox question8bCheckBox = findViewById(R.id.question8_b);
+				question8bCheckBox.setTextColor(Color.RED);
+			}
 
 
-			if(correctQuestion8dAnswer){
-			CheckBox question8dCheckBox = findViewById(R.id.question8_d);
-			question8dCheckBox.setTextColor(Color.RED);}
+			if (correctQuestion8dAnswer) {
+				CheckBox question8dCheckBox = findViewById(R.id.question8_d);
+				question8dCheckBox.setTextColor(Color.RED);
+			}
 		}
 
 	}
 
 
 	//This method is called when the Start Over button is clicked and it Initializes the activity
-	public void startOver(View view){
+	public void startOver(View view) {
 
 		finish();
 		startActivity(getIntent());
 	}
 
 	//This method is called when the Show Answers button is clicked
-	public void showAnswers(View view){
+	public void showAnswers(View view) {
 		RadioButton question1Answer = findViewById(R.id.question1_a);
 		question1Answer.setChecked(true);
 
@@ -295,10 +292,10 @@ int score = 0;
 
 	}
 
-	/**This method clears the selected checkboxes that are incorrect
-	 *
-	 * */
-	public void clearCheckedIncorrect(){
+	/**
+	 * This method clears the selected checkboxes that are incorrect
+	 */
+	public void clearCheckedIncorrect() {
 
 		//This references to the checkbox containing the incorrect answer.
 		CheckBox question6CheckBoxC = findViewById(R.id.question6_c);
@@ -307,7 +304,7 @@ int score = 0;
 
 		//This clears any incorrect answer to the question 6 checkboxes
 		//before displaying the correct answer.
-		if(incorrectQuestion6c){
+		if (incorrectQuestion6c) {
 			question6CheckBoxC.setChecked(false);
 		}
 
@@ -318,7 +315,7 @@ int score = 0;
 
 		//This clears any incorrect answer to the question 6 checkboxes
 		//before displaying the correct answer.
-		if(incorrectQuestion6e){
+		if (incorrectQuestion6e) {
 			question6CheckBoxE.setChecked(false);
 		}
 
@@ -329,7 +326,7 @@ int score = 0;
 
 		//This clears any incorrect answer to the question 8 checkboxes
 		//before displaying the correct answer.
-		if(incorrectQuestion8a){
+		if (incorrectQuestion8a) {
 			question8CheckBoxA.setChecked(false);
 		}
 
@@ -340,7 +337,7 @@ int score = 0;
 
 		//This clears any incorrect answer to the question 8 checkboxes
 		//before displaying the correct answer.
-		if(incorrectQuestion8b){
+		if (incorrectQuestion8b) {
 			question8CheckBoxB.setChecked(false);
 		}
 
@@ -351,7 +348,7 @@ int score = 0;
 
 		//This clears any incorrect answer to the question 8 checkboxes
 		//before displaying the correct answer.
-		if(incorrectQuestion8d){
+		if (incorrectQuestion8d) {
 			question8CheckBoxD.setChecked(false);
 		}
 	}
