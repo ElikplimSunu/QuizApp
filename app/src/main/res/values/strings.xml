@@ -1,0 +1,64 @@
+<resources>
+	<string name="app_name">Quiz App</string>
+	<string name="question_text_view">Questions</string>
+
+	<!-- The string values for the first question. -->
+	<string name="question1">1. What is log message in android? </string>
+	<string name="question1_a">Log message is used to debug a program.</string>
+	<string name="question1_b">Same as printf()</string>
+	<string name="question1_c">Same as Toast()</string>
+	<string name="question1_d">None of the above.</string>
+
+	<!-- The string values for the second question. -->
+	<string name="question2">2. Android releases since 1.5 have been given nicknames derived how? </string>
+	<string name="question2_a">Adjectives and strange animals</string>
+	<string name="question2_b">American states</string>
+	<string name="question2_c">Food</string>
+	<string name="question2_d">None of the above.</string>
+
+	<!-- The string values for the third question. -->
+	<string name="question3">3. Android component that manages app\'s configuration file is called</string>
+	<string name="question3_a">view</string>
+	<string name="question3_b">fragment</string>
+	<string name="question3_c">manifest</string>
+	<string name="question3_d">intent</string>
+
+	<!-- The string values for the fourth question. -->
+	<string name="question4">4. By default in Android Studio, during app development, file that holds information
+	about SDK, versions, application ID, etc. is </string>
+	<string name="question4_a">AndroidManifest.xml</string>
+	<string name="question4_b">res/values</string>
+	<string name="question4_c">res/layout</string>
+	<string name="question4_d">build.gradle</string>
+
+	<!-- The string values for the fifth question. -->
+	<string name="question5">5. The method called when the activity is created is called </string>
+
+	<!-- The string values for the sixth question. -->
+	<string name="question6">6. Which of the following are ways of writing comments </string>
+	<string name="question6_a">//It is a comment</string>
+	<string name="question6_b">/* It is a comment */</string>
+	<string name="question6_c">* It is a comment *</string>
+	<string name="question6_d">/** It is a comment */</string>
+	<string name="question6_e">\\\\ It is a comment</string>
+	<string name="question6_f">&lt;!-- It is a comment --\></string>
+
+	<!-- The string values for the seventh question. -->
+	<string name="question7">7. A type of layout element that allows its children relative position depiction is </string>
+
+
+	<!-- The string values for the eighth question. -->
+	<string name="question8">8. Android is actually using whole bunch of  </string>
+	<string name="question8_a">Python codes</string>
+	<string name="question8_b">C codes</string>
+	<string name="question8_c">Java codes</string>
+	<string name="question8_d">C# codes</string>
+	<string name="question8_e">XML codes</string>
+
+	<string name="submit_button">Submit</string>
+	<string name="startOver_button">Start Over</string>
+	<string name="ShowAnswers_button">Show Answers</string>
+
+	<!-- The string for the hints in the Edit Texts-->
+	<string name="hint">Enter answer</string>
+</resources>

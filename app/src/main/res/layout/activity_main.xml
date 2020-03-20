@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	style="@style/Background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="4dp"
+		android:orientation="vertical">
+
+		<TextView
+			style="@style/TextHeader"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/question_text_view"
+			android:textAllCaps="true" />
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question1_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question1"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/question1" />
+
+					<RadioGroup
+						android:id="@+id/question1_radio_buttons"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question1"
+						android:orientation="vertical">
+
+						<RadioButton
+							android:id="@+id/question1_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question1_a" />
+
+						<RadioButton
+							android:id="@+id/question1_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question1_b" />
+
+						<RadioButton
+							android:id="@+id/question1_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question1_c" />
+
+						<RadioButton
+							android:id="@+id/question1_d"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question1_d" />
+					</RadioGroup>
+				</RelativeLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question2_card_view"
+				android:layout_below="@id/question1_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question2"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question2" />
+
+					<RadioGroup
+						android:id="@+id/question2_radio_buttons"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question2"
+						android:orientation="vertical">
+
+						<RadioButton
+							android:id="@+id/question2_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question2_a" />
+
+						<RadioButton
+							android:id="@+id/question2_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question2_b" />
+
+						<RadioButton
+							android:id="@+id/question2_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question2_c" />
+
+						<RadioButton
+							android:id="@+id/question2_d"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question2_d" />
+					</RadioGroup>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question3_card_view"
+				android:layout_below="@id/question2_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question3"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question3" />
+
+					<RadioGroup
+						android:id="@+id/question3_radio_buttons"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question3"
+						android:orientation="vertical">
+
+						<RadioButton
+							android:id="@+id/question3_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question3_a" />
+
+						<RadioButton
+							android:id="@+id/question3_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question3_b" />
+
+						<RadioButton
+							android:id="@+id/question3_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question3_c" />
+
+						<RadioButton
+							android:id="@+id/question3_d"
+							style="@style/Answers"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/question3_d" />
+					</RadioGroup>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question4_card_view"
+				android:layout_below="@id/question3_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question4"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question4" />
+
+					<RadioGroup
+						android:id="@+id/question4_radio_buttons"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question4"
+						android:orientation="vertical">
+
+						<RadioButton
+							android:id="@+id/question4_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question4_a" />
+
+						<RadioButton
+							android:id="@+id/question4_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question4_b" />
+
+						<RadioButton
+							android:id="@+id/question4_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question4_c" />
+
+						<RadioButton
+							android:id="@+id/question4_d"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question4_d" />
+					</RadioGroup>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question5_card_view"
+				android:layout_below="@id/question4_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question5"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question5" />
+
+					<EditText
+						android:id="@+id/question5_edit_text"
+						style="@style/Answers"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question5"
+						android:hint="@string/hint"
+						android:maxLength="11" />
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question6_card_view"
+				android:layout_below="@id/question5_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question6"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question6" />
+
+					<LinearLayout
+						android:id="@+id/question6_checkboxes"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question6"
+						android:orientation="vertical">
+
+						<CheckBox
+							android:id="@+id/question6_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_a" />
+
+						<CheckBox
+							android:id="@+id/question6_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_b" />
+
+						<CheckBox
+							android:id="@+id/question6_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_c" />
+
+						<CheckBox
+							android:id="@+id/question6_d"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_d" />
+
+						<CheckBox
+							android:id="@+id/question6_e"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_e" />
+
+						<CheckBox
+							android:id="@+id/question6_f"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question6_f" />
+
+					</LinearLayout>
+				</RelativeLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question7_card_view"
+				android:layout_below="@id/question6_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question7"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question7" />
+
+					<EditText
+						android:id="@+id/question7_edit_text"
+						style="@style/Answers"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question7"
+						android:hint="@string/hint"
+						android:maxLength="14" />
+				</RelativeLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/question8_card_view"
+				android:layout_below="@id/question7_card_view"
+				style="@style/CardViewStyle">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/question8"
+						style="@style/QuestionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/question8" />
+
+					<LinearLayout
+						android:id="@+id/question8_checkboxes"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/question8"
+						android:orientation="vertical">
+
+						<CheckBox
+							android:id="@+id/question8_a"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question8_a" />
+
+						<CheckBox
+							android:id="@+id/question8_b"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question8_b" />
+
+						<CheckBox
+							android:id="@+id/question8_c"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question8_c" />
+
+						<CheckBox
+							android:id="@+id/question8_d"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question8_d" />
+
+						<CheckBox
+							android:id="@+id/question8_e"
+							style="@style/Answers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/question8_e" />
+
+					</LinearLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_below="@id/question8_card_view">
+
+				<Button
+					android:id="@+id/submit_button"
+					android:onClick="submitAnswers"
+					android:text="@string/submit_button"
+					style="@style/ButtonStyle"/>
+
+				<Button
+					android:id="@+id/new_start_button"
+					android:onClick="startOver"
+					android:text="@string/startOver_button"
+					style="@style/ButtonStyle" />
+
+				<Button
+					android:id="@+id/show_answers_button"
+					android:onClick="showAnswers"
+					android:text="@string/ShowAnswers_button"
+					style="@style/ButtonStyle"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+
+</ScrollView>

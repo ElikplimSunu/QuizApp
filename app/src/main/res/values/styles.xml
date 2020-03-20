@@ -1,0 +1,55 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">#283593</item>
+		<item name="colorPrimaryDark">#1A237E</item>
+		<item name="colorAccent">#00BCD4</item>
+	</style>
+
+	<!-- This sets the color for the background of the app-->
+	<style name="Background">
+		<item name="android:background">#3949AB</item>
+	</style>
+
+	<!-- This styles the text "Questions"-->
+	<style name="TextHeader">
+		<item name="android:textColor">#E0F7FA</item>
+		<item name="android:textSize">23sp</item>
+	</style>
+
+	<!-- This styles the questions-->
+	<style name="QuestionText">
+		<item name="android:textColor">#E0F7FA</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+
+	<!-- This styles the text for the answers to the questions-->
+	<style name="Answers">
+		<item name="android:textColor">#E0F7FA</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<!-- This styles the Card views -->
+	<style name="CardViewStyle" parent="CardView">
+		<item name="cardBackgroundColor">#3F51B5</item>
+		<item name="cardCornerRadius">8dp</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name = "android:padding">4dp</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<!-- This styles the buttons -->
+	<style name="ButtonStyle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_margin">4dp</item>
+		<item name="android:background">@drawable/custom_button</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+</resources>
